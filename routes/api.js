@@ -1,8 +1,9 @@
 var express = require('express')
 var router = express.Router()
 var controller = require('../app/Http/Controller/controllers')
+const middleware = require('../app/Http/Middleware/middleware')
 
-router.get('/user', controller.UserController.index)
-router.post('/register', controller.UserController.register)
+router.route('/store', middleware.jwtVerify)
+    .get(controller.GoodsController.index)
 
 module.exports = router

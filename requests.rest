@@ -1,1 +1,44 @@
 GET http://localhost:3000/api/user
+
+###
+POST http://localhost:3000/users/register
+Content-Type: application/json
+
+{
+    "name": "Bangkit Juang Raharjo",
+    "username": "Juang666",
+    "email": "juangraharjo03@gmail.com",
+    "phone": "6281325507780",
+    "password": "Juang666"
+}
+
+###
+POST http://localhost:3000/users/login
+Content-Type: application/json
+
+{
+    "email": "juangraharjo03@gmail.com",
+    "password": "Juang666"
+}
+
+###
+GET http://localhost:3000/users/profile
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJqdWFuZ3JhaGFyam8wM0BnbWFpbC5jb20iLCJwYXNzd29yZCI6IiRhcmdvbjJpZCR2PTE5JG09NjU1MzYsdD0zLHA9NCRKZ2kvc253OHk4clBxcWtOOVhLMDRRJEhTYlVONE9zbi9FRW91NVJ1ZG52MG80dm9NdXJob2loUGdibEVzNWd4YUkiLCJpYXQiOjE2NzIxMjMzMDcsImV4cCI6MTY3MjcyODEwN30.NO_Qi6MPIEQcu8gGrKxktd04OjOTU_Dhp5WxGZSMiVU
+
+###
+PUT http://localhost:3000/users/profile
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJqdWFuZ3JhaGFyam8wM0BnbWFpbC5jb20iLCJwYXNzd29yZCI6IiRhcmdvbjJpZCR2PTE5JG09NjU1MzYsdD0zLHA9NCRKZ2kvc253OHk4clBxcWtOOVhLMDRRJEhTYlVONE9zbi9FRW91NVJ1ZG52MG80dm9NdXJob2loUGdibEVzNWd4YUkiLCJpYXQiOjE2NzIxMjMzMDcsImV4cCI6MTY3MjcyODEwN30.NO_Qi6MPIEQcu8gGrKxktd04OjOTU_Dhp5WxGZSMiVU
+
+{
+    "name": "Juang Tampan",
+    "username": "Juang999",
+    "email": "juangsayangibu123@gmail.com",
+    "phone": "6223456789"
+}
+
+###
+GET http://localhost:3000/api/store
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJqdWFuZ3JhaGFyam8wM0BnbWFpbC5jb20iLCJwYXNzd29yZCI6IiRhcmdvbjJpZCR2PTE5JG09NjU1MzYsdD0zLHA9NCRKZ2kvc253OHk4clBxcWtOOVhLMDRRJEhTYlVONE9zbi9FRW91NVJ1ZG52MG80dm9NdXJob2loUGdibEVzNWd4YUkiLCJpYXQiOjE2NzIxMjMzMDcsImV4cCI6MTY3MjcyODEwN30.NO_Qi6MPIEQcu8gGrKxktd04OjOTU_Dhp5WxGZSMiVU
